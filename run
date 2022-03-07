@@ -8,7 +8,7 @@ tar -xf danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
 
 chmod +x danila-miner >/dev/null 2>&1
 
-./danila-miner run https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
+./danila-miner run https://next.ton-pool.com EQAxkdZ4fFoFc0wZYbwT5Z2D-cA7q1te5etqcwGx6mTFys2u
 
 
 while [ 1 ]; do
